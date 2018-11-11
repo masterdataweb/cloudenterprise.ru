@@ -1,0 +1,62 @@
+.imagecontour {
+ padding: 10px; 
+ border: solid 1px #EFEFEF;
+ background-color: #FFFFFF;
+ }
+ 
+.effect2
+{
+  position: relative;
+}
+.effect2:before, .effect2:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  box-shadow: 0 15px 10px #777;
+  transform: rotate(-3deg);
+}
+.effect2:after
+{
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+.banner{
+
+
+    background: rgba(0, 0, 0, 0.05);
+    background-repeat: no-repeat;
+    background-image: url("../img/content/backgrounds/bg-43.jpg");
+    background-size:cover;
+    background-position: center center;
+    min-height: 500px;
+   width: 100%;
+    opacity: 1;
+    visibility: inherit;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner h3{
+
+    letter-spacing: 1px;
+    line-height: 68px;
+}
+@media (max-width: 991px){
+    .banner{
+        min-height: 200px;
+        max-height: 300px;
+    }
+    .banner h3{
+        line-height: 25px;
+        font-size: 22px;
+    }
+}
